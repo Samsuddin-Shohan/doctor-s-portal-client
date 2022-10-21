@@ -6,19 +6,16 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Home from './pages/Home/Home/Home';
+import Services from './pages/Home/Services/Services';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
+    element: <Home></Home> ,
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "services",
+    element: <Services></Services>,
   },
 ]);
 function App() {
